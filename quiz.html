@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Quiz</title>
+</head>
+<body>
+  <h1>JavaScript Quiz</h1>
+  <div id="quiz-container">
+    <p>What is 2 + 2?</p>
+    <button onclick="checkAnswer(4)">4</button>
+    <button onclick="checkAnswer(3)">3</button>
+    <button onclick="checkAnswer(5)">5</button>
+    <p id="result"></p>
+  </div>
+
+  <script>
+    function checkAnswer(answer) {
+      const result = document.getElementById("result");
+      if (answer === 4) {
+        result.textContent = "Correct!";
+        result.style.color = "green";
+      } else {
+        result.textContent = "Incorrect. Try again!";
+        result.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>

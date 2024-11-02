@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .box {
+      padding: 20px;
+      background-color: #4CAF50;
+      color: white;
+      margin: 10px 0;
+    }
+    /* Mobile styles */
+    @media (max-width: 480px) {
+      .box {
+        font-size: 14px;
+      }
+    }
+    /* Tablet styles */
+    @media (min-width: 481px) and (max-width: 768px) {
+      .box {
+        font-size: 18px;
+      }
+    }
+    /* Desktop styles */
+    @media (min-width: 769px) {
+      .box {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">Responsive Box</div>
+  </div>
+</body>
+</html>
